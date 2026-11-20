@@ -32,5 +32,5 @@ api_params = {
 
 if st.button('Predict Fare 🚕'):
     response = requests.get(url=API_URL, params=api_params)
-    prediction = response.json()['prediction']
-    st.write(f'Predicted Fare: {prediction}')
+    prediction = round(response.json()['fare'], 2)
+    st.write(f'Predicted Fare: {prediction}$')
