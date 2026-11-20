@@ -2,8 +2,7 @@ import streamlit as st
 import requests
 
 
-# API_URL = st.secrets['API_URL']
-API_URL = "http://127.0.0.1:8080/predict"
+API_URL = st.secrets['API_URL']
 """
 # TaxiFare Prediction App 🚕
 """
